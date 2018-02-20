@@ -15,12 +15,12 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  var grandNode = document.querySelector('#grand-node');
-  var nestedChild = grandNode.children[0];
+  var main = document.querySelector('div#grand-node');
+  var nestedChild = main.children[0];
 
   while (nestedChild) {
-    grandNode = nestedChild;
-    nestedChild = grandNode.children[0];
+    main = nestedChild;
+    nestedChild = main.children[0];
   }
-  return nestedChild;
+  return main;
 }

@@ -18,7 +18,7 @@ function deepestChild() {
   const selector = '#grand-node';
   const childNode = grandNode.children[0];
 
-  while (childNode !== undefined) {
+  while (childNode !== null) {
     selector += ' div';
     childNode = document.querySelector('selector');
   }

@@ -12,9 +12,9 @@ function getFirstSelector(selector) {
   })
 
 function nestedTarget() {
-    that pulls a .target out of #nested (# is used for IDs in selectors — but you knew that because you read the docs, right? :) ). 
+    that pulls a .target out of #nested (# is used for IDs in selectors — but you knew that because you read the docs, right? :) ).
     (Note that in index.html #nested and .target just happen to be divs. This method should work with arbitrary elements.)
-}  
+}
 
   describe('nestedTarget()', () => {
     it('pulls a .target out of #nested', () => {
@@ -25,7 +25,7 @@ function nestedTarget() {
 function increaseRankBy(n) {
     that increases the ranks in all of the .ranked-lists by n. (You might need to make use of parseInt()
 }
-  
+
 
   describe('increaseRankBy(n)', () => {
     it('increases ranks in .ranked-list by n', () => {
@@ -55,7 +55,7 @@ function deepestChild() {
   that pulls out the most deeply nested child from div#grand-node.
   (Remember, you can iterate over elements and call querySelector() and querySelectorAll() on them.
   This is challenging to implement correctly, but not beyond your ability!)
-  
+
     describe('deepestChild()', () => {
   it('returns the most deeply nested child in #grand-node', () => {
     console.log(deepestChild().innerHTML)

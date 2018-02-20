@@ -10,6 +10,6 @@ function deepestChild() {
   const dC = document.getElementById('app').querySelectorAll('#grand-node')
 
   for (let i = 0; i < dC.length; i++) {
-    divs[i].innerHTML = (i + 1).toString()
+    dC[i].innerHTML = (i + 1).toString()
   }
 }

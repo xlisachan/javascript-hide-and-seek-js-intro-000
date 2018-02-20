@@ -18,7 +18,7 @@ function deepestChild() {
   var main = document.querySelector('div#grand-node')[0];
   var branchNode = main.children;
 
-  while (brandhNode) {
+  while (branchNode) {
     main = branchNode;
     branchNode = main.children;
   }

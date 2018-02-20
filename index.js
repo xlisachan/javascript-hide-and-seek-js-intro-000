@@ -18,7 +18,7 @@ function deepestChild() {
   var main = document.querySelector('div#grand-node');
   var nestedChild = main.children[0];
 
-  while (nestedChild) {
+  while (nestedChild === defined) {
     main = nestedChild;
     nestedChild = main.children[0];
   }

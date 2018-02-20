@@ -9,7 +9,7 @@ function nestedTarget() {
 function deepestChild() {
   const deepestChild = document.getElementById('app').querySelectorAll('div grand-node')
 
-  for (let i = 0; i < div.length; i++) {
+  for (let i = 0; i < app.length; i++) {
     div[i].innerHTML = (i + 1).toString()
   }
 }

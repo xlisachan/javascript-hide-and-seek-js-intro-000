@@ -19,8 +19,8 @@ function deepestChild() {
   var nestedChild = grandNode.children[0];
 
   while (nestedChild) {
-    nestedChild = grandNode;
-    grandNode = grandNode.children[0];
+    grandNode = nestedChild;
+    nestedChild = grandNode.children[0];
   }
   return nestedChild;
 }
